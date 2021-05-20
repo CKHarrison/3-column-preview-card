@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile Layout](./images/mobile-view.png)
-![Desktop Layout](./images/desktop-view.png)
+![Desktop Layout](./images/desktop_view.png)
 
 ### Links
 
