@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-/hub/3columncomponent-solution-9V8ZCm_a1)
+- Live Site URL: [Add live site URL here](https://ckharrison.github.io/3-column-preview-card/)
 
 ## My process
 I used this challenge to practice my CSS Grid skills along with Flexbox. I just recently learned how to use grid and found this challenge to be very helpful in implementing what I learned.
@@ -57,4 +57,4 @@ I was able to continue to apply my learnings about a mobile-first approach to th
 ## Author
 
 - Website - [Christopher Harrison](https://github.com/CKHarrison)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/CKHarrison)
+- Frontend Mentor - [@ckharrison](https://www.frontendmentor.io/profile/CKHarrison)
