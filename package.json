@@ -1,0 +1,15 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "3 column preview card component",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "ckharrison",
+  "license": "ISC",
+  "homepage": "https://ckharrison.github.io/3-column-preview-card",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
