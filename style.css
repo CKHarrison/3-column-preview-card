@@ -1,0 +1,140 @@
+:root {
+  box-sizing: border-box;
+  --bright-orange:  hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body {
+  /* color: white; */
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .9375rem;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 1440px;
+  color: var(--transparent-white);
+}
+
+h2 {
+  color: var(--very-light-grey);
+  font-family: 'Big Shoulders Display', cursive;  
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  text-align: left;
+  margin: 0;
+  letter-spacing: .05em;
+  line-height: 1.8em;
+}
+
+
+.container {
+  display: grid;
+  /* gap: 1.25em; */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  align-items: flex-start;
+  justify-items: center;
+  padding: 2em;
+}
+
+.card-one {
+  background: var(--bright-orange);
+}
+
+.card-two {
+  background: var(--dark-cyan);
+}
+
+.card-three {
+  background: var(--very-dark-cyan);
+}
+
+.btn {
+  font-size: 1rem;
+   text-decoration: none;
+   padding: 1em 2em;
+  background: var(--very-light-grey);
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.btn-sedan {
+  color: var(--bright-orange);
+}
+
+.btn-suv {
+  color: var(--dark-cyan);
+}
+
+.btn-luxury {
+  color: var(--very-dark-cyan);
+}
+
+
+
+
+.attribution {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 2em;
+  color: black;
+}
+
+.attribution > p > a {
+  color: var(--very-dark-cyan);
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+   p {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    margin: 10em auto;
+  }
+
+ 
+
+  .container {
+    grid-template-columns: repeat(3, 1fr );
+    height: 80vh;
+  }
+
+  .section {
+    align-self: stretch;
+    gap: 4em;
+    padding: 3em;
+  }
+
+  .attribution {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    align-self: flex-start;
+  }
+}
