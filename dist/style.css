@@ -12,7 +12,6 @@
 }
 
 body {
-  /* color: white; */
   font-family: 'Lexend Deca', sans-serif;
   font-size: .9375rem;
   font-weight: 400;
@@ -81,6 +80,14 @@ h2 {
 .btn:hover  {
   background: none;
   border: 1px solid var(--very-light-grey);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--very-light-grey);    
 }
 
 
@@ -153,18 +160,14 @@ h2 {
     margin: 10em auto;
   }
 
- 
-
   .container {
     justify-content: center;
-    /* grid-template-columns: repeat(3, 300px ); */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows:  5fr 1fr;
     height: 80vh;
   }
 
   .section {
-    /* align-self: stretch; */
     gap: 4em;
     padding: 3em;
   }

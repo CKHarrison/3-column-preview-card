@@ -53,6 +53,7 @@ I was able to continue to apply my learnings about a mobile-first approach to th
 ### Useful resources
 
 - [Wes Bos CSS Grid](https://cssgrid.io/) - I thought this was a great resource to learn about CSS Grid.
+- [CSS Tips & Tricks Focus Visible](https://css-tricks.com/almanac/selectors/f/focus-visible/) - I used this to learn how to make my buttons focusable. Based on some feedback I received from user @grace-snow on frontend mentors.
 
 ## Author
 
