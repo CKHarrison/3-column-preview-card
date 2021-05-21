@@ -16,7 +16,7 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   font-size: .9375rem;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 2em auto;
   max-width: 1440px;
   color: var(--transparent-white);
 }
@@ -30,18 +30,19 @@ h2 {
   margin: 0;
 }
 
-p {
+.card-text {
   text-align: left;
   margin: 0;
   letter-spacing: .05em;
-  line-height: 1.8em;
+  line-height: 1.8;
 }
 
 
 .container {
   display: grid;
-  /* gap: 1.25em; */
+
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 1em;
 }
 
 .section {
@@ -55,6 +56,7 @@ p {
 
 .card-one {
   background: var(--bright-orange);
+  border-radius: .5em .5em 0 0;
 }
 
 .card-two {
@@ -63,39 +65,64 @@ p {
 
 .card-three {
   background: var(--very-dark-cyan);
+  border-radius: 0 0 .5em .5em;
 }
 
 .btn {
   font-size: 1rem;
-   text-decoration: none;
-   padding: 1em 2em;
+  text-decoration: none;
+  padding: 1em;
   background: var(--very-light-grey);
   border: none;
   border-radius: 2em;
   cursor: pointer;
 }
 
+.btn:hover  {
+  background: none;
+  border: 1px solid var(--very-light-grey);
+}
+
+
+.btn > a {
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
 .btn-sedan {
   color: var(--bright-orange);
 }
 
+.btn-sedan:hover {
+  color: var(--very-light-grey);
+}
+
+
 .btn-suv {
   color: var(--dark-cyan);
+}
+.btn-suv:hover {
+  color: var(--very-light-grey);
 }
 
 .btn-luxury {
   color: var(--very-dark-cyan);
 }
 
-
-
+.btn-luxury:hover {
+  color: var(--very-light-grey);
+}
 
 .attribution {
   display: flex;
   align-items: flex-end;
   text-align: center;
-  padding: 2em;
+  padding: 1em;
   color: black;
+}
+
+.attribution-text {
+  margin: 0;
 }
 
 .attribution > p > a {
@@ -107,14 +134,21 @@ p {
 
   .container {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .section {
+    max-width: 650px;
   }
 
-   p {
+   .card-text {
     max-width: 80%;
+  }
+  .attribution {
+    padding: .5em 0;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 930px) {
   body {
     margin: 10em auto;
   }
@@ -122,19 +156,35 @@ p {
  
 
   .container {
-    grid-template-columns: repeat(3, 1fr );
+    justify-content: center;
+    /* grid-template-columns: repeat(3, 300px ); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows:  5fr 1fr;
     height: 80vh;
   }
 
   .section {
-    align-self: stretch;
+    /* align-self: stretch; */
     gap: 4em;
     padding: 3em;
   }
 
+  .card-text {
+    max-width: 85%;
+  }
+
+  .card-one {
+    border-radius: .25em 0 0 .5em;
+  }
+
+  .card-three {
+    border-radius: 0 .5em .5em 0;
+  }
+
   .attribution {
-    grid-column: 1 / -1;
-    grid-row: 2;
+    display: flex;
     align-self: flex-start;
+    grid-row: 2;
+    gap: 0;
   }
 }
